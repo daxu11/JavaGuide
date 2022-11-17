@@ -79,5 +79,8 @@ self.addEventListener('fetch', event => {
         .then(([response, cache]) => response.ok && cache.put(event.request, response))
         .catch(_ => { /* eat any errors */ })
     )
+    
+    
+    
   }
 })
